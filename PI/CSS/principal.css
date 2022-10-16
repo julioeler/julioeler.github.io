@@ -1,0 +1,118 @@
+@import "/SistemasWebClass/PI/CSS/dashboard.css";
+@import "/SistemasWebClass/PI/CSS/formulario.css";
+@import "/SistemasWebClass/PI/CSS/botoes.css";
+/* ---------VARIÁVEIS--------------- */
+:root {
+  --colorText-00: #ffffff;
+  --colorText-01: #c33333;
+  --colorText-02: #7d7979;
+  --colorText-03: #737373;
+  --colorTextButton: #e3e3e3;
+  --backgroundColor-00: #c33333;
+  --backgroundColor-01: #f1f1f1;
+  --backgroundColor-02: #ffffff;
+  --backgroundColor-03: #f5f5f5;
+  --colorShadow: #c9c9c9;
+  --colorInputBorder: #dcdcdc;
+  --colorButtonSave: #3b6dee;
+  --colorButtonCancel: #c33333;
+}
+/* ---------------ESTILOS GERAIS------------------ */
+html,
+body,
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  /* RESETA OS ESTILOS PADROES DO CSS */
+}
+
+body {
+  background-color: var(--backgroundColor-03);
+
+}
+
+.divForm {
+  background-color: var(--backgroundColor-02);
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+input {
+  font-size: 1rem;
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: var(--colorInputBorder);
+}
+label {
+  display: block;
+  font-size: 1.1rem;
+  /* DISPLAY BLOCK PARA A LABEL FICAR EM CIMA DO IMPUT (VAI ATUAR COMO ELEMENTO DE BLOCO) */
+  color: var(--colorText-03);
+}
+button {
+  display: block;
+}
+
+/* --------------DIV BODY------------------- */
+.divBody {
+  display: grid;
+  grid-template-columns: 200px auto;
+  height: 100vh;
+}
+
+/*----------------DIV DA LOGO--------------*/
+.contentLogoDashboard {
+  background-color: var(--backgroundColor-02);
+  height: 70px;
+}
+
+/*-------------------lOGO SCF ----------------*/
+.logoTitleContent {
+  color: var(--colorText-01);
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* JUSTIFY E ALIGN VAI FAZER O <h1> QUE É O ITEM QUE ESTA DENTRO DO <a> FLEXIVEL*/
+  font-size: 2rem;
+  /*Unidade de medida em rem, equivale a 1 * n(pixel do html raiz). O valor padrao em pixels do browser é 16px. Logo (2 * 16) = 32pixels e sucessivamente*/
+  box-shadow: 0.5px 4px 3px var(--colorShadow);
+  height: 100%;
+}
+
+/*-------TÍTULO PRINCIPAL FUNCIONÁRIOS ---------------- */
+.contentsTitleFuncionarios {
+  margin: 0px;
+  background-color: var(--backgroundColor-00);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  /* DISPLAY FLEX E ALIGN ITENS PARA CENTRALIZAR O "titleFuncionarios" */
+}
+
+/* --------------- ANIMAÇÕES ---------------------------*/
+.linkList:hover {
+  color: var(--colorText-00);
+  background-color: var(--colorText-01);
+}
+
+.logoTitleContent:focus{
+  outline-color: var(--backgroundColor-00);
+}
+
+
+@media (max-widht: 400){
+  .divBody{
+    background-color: aqua;
+  }
+}

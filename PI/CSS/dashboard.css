@@ -1,0 +1,58 @@
+:root {
+  --colorText-02: #7d7979;
+  --backgroundColor-02: #ffffff;
+  --backgroundColor-00: #c33333;
+}
+
+.iconList {
+  /*-----------TAMANHO DOS ÍCONES DO DASHBOARD (MENU LATERAL)-----------------*/
+  width: 35px;
+  height: 50px;
+}
+
+.contentsDashboard {
+  background-color: var(--backgroundColor-02);
+}
+
+
+/* ------------------MENU LATERAL ------------------------*/
+.contentsDashboard {
+  font-size: 1.2rem;
+}
+
+.funcionarios {
+  background-color: var(--backgroundColor-00);
+}
+
+.funcionarios p {
+  color: var(--colorText-00);
+}
+
+.navbarDashboard {
+  list-style: none;
+  background-color: var(--backgroundColor-02);
+  color: var(--colorText-02);
+  padding: 0px;
+}
+
+.navbarDashboardList {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.linkList {
+  font-weight: 600;
+  color: var(--colorText-02);
+  width: 100%;
+  /*Faz o link ficar do tamanho completo do grid*/
+}
+
+
+.linkList:focus {
+  outline-color: var(--backgroundColor-00);
+
+}
+

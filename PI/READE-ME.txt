@@ -1,0 +1,3 @@
+o arquivo html "cadastro de funcionários" é somente o form. 
+
+O arquivo principal é o index.html

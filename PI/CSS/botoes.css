@@ -1,0 +1,51 @@
+:root{
+  --colorTextButton: #e3e3e3;
+  --colorButtonSave: #3b6dee;
+  --colorButtonSaveAnimation: #5c7ac5;
+  --colorButtonCancelAnimation: #c55c5c;
+  --colorButtonCancel: #c33333;
+  --colorText-01: #c33333;
+}
+/* --------------------------  BOTÕES -------------------------- */
+.divBtn {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  place-self: end;
+  gap: 40px;
+  margin: 20px 40px;
+  /* Margin vertical =20px e margin horizontal =40px */
+}
+
+#sendBtn {
+  background-color: var(--colorButtonSave);
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: var(--colorTextButton);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#cancelBtn {
+  background-color: var(--colorButtonCancel);
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: var(--colorTextButton);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: width 2s;
+}
+
+#sendBtn:focus, #sendBtn:hover {
+  outline: 0;
+  background-color: var(--colorButtonSaveAnimation); 
+  cursor: pointer;
+}
+#cancelBtn:focus, #cancelBtn:hover{
+  outline: 0;
+  cursor: pointer;
+  background-color: var(--colorButtonCancelAnimation);
+}
+ 

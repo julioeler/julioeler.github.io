@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/principal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="divBody">
+    <div class="contentsDashboard">
+      <div class="contentLogoDashboard">
+        <a class="logoTitleContent" href="#">
+          <h1>SCF</h1>
+        </a>
+      </div>
+
+      <!-- MENU LATERAL -->
+      <nav>
+        <!-- Todo o conteudo da lista está em uma tag de link para que todo ele seja clicável e não somente o texto -->
+        <ul class="navbarDashboard">
+          <a class="linkList" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/chart.svg" alt="">
+              <p class="textList">Dashboard</p>
+            </li>
+          </a>
+          <a class="linkList funcionarios" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/people.svg" alt="">
+              <p class="textList">Funcionários</p>
+            </li>
+          </a>
+          <a class="linkList" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/gas-station.svg" alt="">
+              <p class="textList">Post. Combustíveis</p>
+            </li>
+          </a>
+          <a class="linkList" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/car.svg" alt="">
+              <p class="textList">Veículos</p>
+            </li>
+          </a>
+          <a class="linkList" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/map.svg" alt="">
+              <p class="textList">Mapa</p>
+            </li>
+          </a>
+          <a class="linkList" href="#">
+            <!--Implementar o link da pagina html-->
+            <li class="navbarDashboardList">
+              <img class="iconList" src="/SistemasWebClass/PI/Imagens/invoice.svg" alt="">
+              <p class="textList">Financeiro</p>
+            </li>
+          </a>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="formularioFuncionarios">
+      <div class="contentsTitleFuncionarios">
+        <div>
+          <h1 class="titleFuncionarios">Funcionários</h1>
+        </div>
+        <!-- IMPLEMENTAR USUARIO COM IMAGEM -->
+        <div>
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div id="divPrincipalForm">
+        <div class="divTitleForm">
+          <h2 class="titleFormulario">Cadastro de Funcionários</h2>
+        </div>
+        <div class="divForm">
+          <form action="/SistemasWebClass/PI/index.html" method="">
+            <div class="inputFormName">
+              <div>
+                <label for="nome">Nome</label>
+                <input class="inputName" type="text" name="nome" id="nome" placeholder="Ex: Joao Silva" required>
+              </div>
+            </div>
+            <div class="divFormulario">
+              <div class="contentsFormulario">
+                <div>
+                  <div class="inputForm">
+                    <label for="dateBirth">Data de nascimento</label>
+                    <input type="date" name="dateBirth" id="dateBirth">
+                  </div>
+                  <div class="inputForm">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="joao@exemplo.com" required>
+                  </div>
+                  <div class="inputForm">
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="12345-678">
+                  </div>
+                  <div class="inputForm">
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado">
+                  </div>
+                  <div class="inputForm">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                  </div>
+                  <div class="inputForm">
+                    <label for="numero">Numero</label>
+                    <input type="number" name="numero" id="numero">
+                  </div>
+                  <div class="inputForm">
+                    <label for="setor">Setor</label>
+                    <input type="text" name="setor" id="setor" required>
+                  </div>
+                </div>
+              </div>
+              <div class="contentsFormulario2">
+                <div class="inputForm">
+                  <label for="cpf">CPF</label>
+                  <input type="number" name="cpf" id="cpf" required placeholder="12345-678">
+                </div>
+                <div class="inputForm">
+                  <label for="telefone">Telefone</label>
+                  <input type="number" name="telefone" id="telefone" required placeholder="(31) 91234-5678">
+                </div>
+                <div class="inputForm">
+                  <label for="cidade">Cidade</label>
+                  <input type="text" name="cidade" id="cidade">
+                </div>
+                <div class="inputForm">
+                  <label for="logradouro">Logradouro</label>
+                  <input type="text" name="logradouro" id="logradouro" placeholder="Avenida Paulista">
+                </div>
+                <div class="inputForm">
+                  <label for="complemento">Complemento</label>
+                  <input type="text" name="complemento" id="complemento" placeholder="Casa, apartamento, condomínio">
+                </div>
+              </div>
+
+              <div class="divBtn">
+                <div>
+                  <button id="sendBtn">Salvar</button>
+                </div>
+                <div>
+                  <button id="cancelBtn">Cancelar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

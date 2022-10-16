@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Cadastrar Funcionarios</title>
+</head>
+
+<body>
+  <div class="divBody">
+    <div class="contentsDashboard">
+      <div class="contentLogoDashboard">
+        <a class="logoTitleContent" href="#">
+          <h1>SCF</h1>
+        </a>
+      </div>
+
+    <div class="formularioFuncionarios">
+      <div class="contentsTitleFuncionarios">
+        <h1 class="titleFuncionarios">Funcionarios</h1>
+        <!-- IMPLEMENTAR USUARIO COM IMAGEM -->
+      </div>
+
+      <div>
+        <h2 class="titleFormulario">Cadastro de Funcionários</h2>
+        <form action="/SistemasWebClass/PI/index.html" method="">
+        <div class="inputFormName">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Ex: Joao Silva" required>
+        </div>
+        <div class="divFormulario">
+          <div class="contentsFormulario">
+            <div>
+              <div class="inputForm">
+                <label for="dateBirth">Data de nascimento</label>
+                <input type="date" name="dateBirth" id="dateBirth">
+              </div>
+              <div class="inputForm">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="joao@exemplo.com" required>
+              </div>
+              <div class="inputForm">
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep" placeholder="12345-678">
+              </div>
+              <div class="inputForm">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado">
+              </div>
+              <div class="inputForm">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro">
+              </div>
+              <div class="inputForm">
+                <label for="numero">Numero</label>
+                <input type="number" name="numero" id="numero">
+              </div>
+              <div class="inputForm">
+                <label for="setor">Setor</label>
+                <input type="text" name="setor" id="setor" required>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="inputForm">
+              <label for="cpf">CPF</label>
+              <input type="number" name="cpf" id="cpf" placeholder="123.123.123-12" required>
+            </div>
+            <div class="inputForm">
+              <label for="telefone">Telefone</label>
+              <input type="number" name="telefone" id="telefone" placeholder="(00) 90123-4567" required>
+            </div>
+            <div class="inputForm">
+              <label for="cidade">Cidade</label>
+              <input type="text" name="cidade" id="cidade">
+            </div>
+            <div class="inputForm">
+              <label for="logradouro">Logradouro</label>
+              <input type="text" name="logradouro" id="logradouro">
+            </div>
+            <div class="inputForm">
+              <label for="complemento">Complemento</label>
+              <input type="text" name="complemento" id="complemento" placeholder="Casa, Apartamento...">
+            </div>
+            <button>Enviar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

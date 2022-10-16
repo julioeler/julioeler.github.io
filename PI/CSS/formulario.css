@@ -1,0 +1,71 @@
+/* ----------------FORMULÁRIO FUNCIONÃRIOS --------------------*/
+:root{
+  --colorText-00: #ffffff;
+  --colorText-01: #c33333;
+  --backgroundColor-00: #c33333;
+}
+
+.titleFuncionarios {
+  color: var(--colorText-00);
+  margin: 0px 0px 0px 30px;
+  font-size: 1.8rem;
+}
+
+.titleFormulario {
+  padding: 15px 60px;
+  color: var(--colorText-01);
+  font-size: 1.7rem;
+}
+
+#nome {
+  width: 100%;
+}
+
+.divForm {
+  width: 1000px;
+  /*Para uma tela de computador normal. FAZER OS RESPONSIVOS DEPOIS*/
+  margin: 0 auto;
+  padding: 5px 20px 0px 20px;
+}
+
+.divFormulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.contentsFormulario {
+  justify-self: left;
+}
+
+.contentsFormulario,
+input {
+  width: 100%;
+}
+
+.contentsFormulario2 {
+  justify-self: left;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.contentsFormulario2,
+input {
+  width: 100%;
+}
+
+.inputFormName {
+  padding: 8px;
+}
+
+.inputForm {
+  padding: 8px;
+}
+
+/*----------- REMOVE A BORDA DOS INPUT QUANDO CLICADO--------- */
+input:focus{
+  outline: 0;
+  border-color: var(--backgroundColor-00);
+
+}
+
