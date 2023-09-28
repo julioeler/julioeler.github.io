@@ -1,0 +1,235 @@
+.loginBg{
+  background-color: #eceff4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.loginContainer{
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.loginForm{
+  background-color: #ffffff;
+}
+.loginTitle{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer label{
+  display: block;  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5a5a5a;
+  margin-left: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.inputContainer input{
+  width: 100%;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  padding: 8px;
+  width: 300px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  border-radius: 4px;
+  background-color: #eceff4;
+  transition: 0.3s ease-in-out;
+}
+
+.inputContainer input:focus{
+outline: none;
+border-color: #27b91a;
+background-color: #fff;
+box-shadow: 0 0 2px 5px #27b91a3a;
+}
+
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+button{
+  font-size: 0.8rem;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 20px;
+  background-color: #27b91a;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #68c260;
+  outline: none;
+}
+
+.buttonDiv a{
+    color: #8a8a8a;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.buttonDiv a:hover{
+  color: #27b91a;
+}
+
+/* -----------SEGUNDA TELA----------------- */
+
+.loginContent{
+  background-color: #0f0c22d2;
+  color: #fcffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 -32px #eceff4, inset 0 32px #eceff4;
+  /* efeito tela menor */
+}
+
+.contentTitle{
+  padding: 80px 40px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.contentDescription{ 
+  padding: 0px 40px 0px 40px;
+  margin-top: 40px;
+}
+
+.contentDescription p{
+  line-height: 1.6;
+  font-size: 1rem;
+  width: 45ch;
+  color: #a9a6b4d2 ;
+}
+.contentDescription a{
+  width: 45ch;
+  background-color: #6b6786d2;
+  padding: 12px;
+  border-radius: 4px;
+  color: #cdcdcd;
+  margin-top: 12px;
+}
+  .contentDescription a:hover{
+  color: #ffffff ;
+  text-decoration: none;
+}
+
+.contentFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 80px 0;
+  gap: 10px;
+}
+
+.contentButton a{
+  padding: 12px 32px;
+  border-radius: 20px;
+  background-color: #27b91a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.contentButton a:hover{
+  background-color: #68c260;
+}
+
+
+@media (max-width: 900px){
+  .loginContainer{
+    grid-template-columns: 1fr;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .loginContent{
+    box-shadow: inherit;
+    grid-row: 1;
+  }
+
+  .contentTitle{
+    padding: 40px 40px 20px 40px;
+    font-size: 1rem;
+  }
+  
+  .contentDescription a{
+    display: none;
+  }
+
+  .contentFooter{
+    padding-bottom: 20px;
+  }
+
+  .loginTitle{
+    font-size: 1rem;
+    padding: 40px 40px 20px 40px;
+  }
+
+  .buttonDiv{
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px){
+  .contentTitle{
+    padding: 40px 0 20px 0;
+    word-break: break-word;
+  }
+  .contentDescription a, .contentDescription p{
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px){
+  .input input{
+    width: 260px;
+  }
+
+  .buttonDiv{
+    padding: 40px 0 20px 0;
+  }
+
+  .buttonDiv a{
+    font-size: 0.8rem;
+  }
+
+  .form{ 
+    margin-top: 0;
+  }
+  .contentDescription {
+    margin-top: 0px;
+  }	
+}

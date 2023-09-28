@@ -1,0 +1,31 @@
+.introducao{
+  max-width: 1200px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 20px 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.introducao h1{
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Roboto Medium", serif;
+}
+
+@media (max-width: 800px){
+  .introducao h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px){
+  
+  .introducao{
+    margin-top: 0px;
+  }
+  .introducao h1{
+    font-size: 24px;
+  }
+}

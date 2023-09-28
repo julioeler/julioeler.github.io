@@ -1,0 +1,104 @@
+.adminBg{
+  max-width: 1200px;
+margin: 0 auto;
+background-color: #568f74;
+border-radius: 12px;
+}
+
+.admin{
+  display: flex;
+  flex-direction: column;
+}
+
+.admin h1{
+  text-align: center;
+}
+.admin h2{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.updateForm{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#8aceae, #568f74);
+  border-radius: 5px;
+  gap: 12px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  
+}
+
+.dateInput{
+  padding: 8px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #d3fae8;
+}
+
+.updateDate{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectForm{
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.selectForm select{
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #d3fae8;
+  border-style: none;
+  place-self: center;
+}
+
+.inputForm{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputForm label{
+  display: block;
+}
+
+.inputForm input{
+  background-color: #d3fae8;
+  margin-top: 4px;
+  padding: 8px;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.botoes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+
+}
+
+.botao{
+  padding: 10px 40px;
+  background-color: #274D30;
+  border-style: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.botao:hover{
+  background-color: #4e815a;
+}
+
+

@@ -1,0 +1,108 @@
+.header-bg{
+  background: linear-gradient(#125c39, #0d5131);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 20px;
+  align-items: center;
+  margin: 0 auto;;
+}
+/* fundo branco da imagem */
+.header-imagem{
+  background-color: var(--corFundo);
+  padding: 20px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;  
+}
+
+.header-menu a {
+  color: #f0ffff;
+  /* PADDING 16 CIMA E BAIXO PARA FICAR MAIS FACIL O CURSOR DO MOUSE ENCONTRAR NA VERSÃO DESKTOP */
+  padding: 16px 0px;
+  position: relative;
+  font-family: "Roboto Medium", sans-serif;
+}
+/* animação ao passar o mouse em cima do link na versão desktop */
+.header-menu a:after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #6c9676;
+  transition: 0.2s;
+  margin-top: 4px;
+  position: absolute;
+}
+/* ativar a animação */
+.header-menu a:hover:after{
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-bg{
+    padding: 20px 0px;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+  }
+
+  .header-menu a {
+    background-color:var(--corFundo);
+   padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--corTexto);
+  }
+
+  .header-menu {
+    justify-content: center;
+    gap: 32px;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+
+  .header-menu a:after{
+    display: none;
+  }
+
+  .header-menu a.active {
+    background-color: #9ABDA3;
+    color: var(--corFundo);
+    /* Outros estilos que você desejar quando o botao da nav estiver ativo*/
+  }
+}
+
+@media (max-width: 600px){
+  .header-menu{
+    gap: 10px;
+  }
+
+  .header-menu a {
+   padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 450;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 320px){
+  .header-menu a{
+    font-size: 0.6rem;
+  }
+}
+
+
