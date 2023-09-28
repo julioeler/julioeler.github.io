@@ -64,7 +64,7 @@
     display: none;
   }
 
-  .projetosLista li a[href^="https://presbiterianajk"] {
+  .projetosLista li a[href^="./igrejaportfolio"] {
     padding: 12px;
     display: block;
     /* background: linear-gradient(#eeeeee, #dddddb); */
@@ -108,7 +108,4 @@
   .projetosLista {
     gap: 22px;
   }
-
-
-
 }
