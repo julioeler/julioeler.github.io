@@ -25,7 +25,7 @@
   padding: 4px;
 }
 
-.projetosLista li a[href^="./igrejaportfolio"]:hover {
+.projetosLista li a[href^="./louvorjk"]:hover {
   text-shadow: 2px 2px 10px #86da9c;
 }
 
@@ -64,7 +64,7 @@
     display: none;
   }
 
-  .projetosLista li a[href^="./igrejaportfolio"] {
+  .projetosLista li a[href^="./louvorjk"] {
     padding: 12px;
     display: block;
     /* background: linear-gradient(#eeeeee, #dddddb); */
