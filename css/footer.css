@@ -1,0 +1,114 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+.projetos {
+  padding: 60px;
+}
+
+.projetosLista {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projetosLista li {
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+}
+
+.projetosLista li a[href^="./igrejaportfolio"]:hover {
+  text-shadow: 2px 2px 10px #86da9c;
+}
+
+.projetosLista li a[href^="./oldportfolio"]:hover {
+  text-shadow: 2px 2px 10px #838ad8;
+}
+
+.projetosLista li a[href^="https://rastrearfrotas"]:hover {
+  text-shadow: 2px 2px 10px #db5858;
+}
+
+
+
+.habilidades {
+  padding: 60px;
+}
+
+.habilidadesLista {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.habilidadesLista li {
+  font-family: "Roboto", sans-serif;
+}
+
+@media(max-width:800px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projetosLista li:last-child {
+    display: none;
+  }
+
+  .projetosLista li a[href^="https://presbiterianajk"] {
+    padding: 12px;
+    display: block;
+    /* background: linear-gradient(#eeeeee, #dddddb); */
+    background-color: #D1E4D6;
+    box-shadow: 1px 1px 2px var(--corDetalhe2);
+    border-radius: 4px;
+  }
+
+  .projetosLista li a[href^="./oldportfolio"] {
+    padding: 12px;
+    display: block;
+    /* background: linear-gradient(#eeeeee, #dddddb); */
+    background-color: #B6BAE4;
+    box-shadow: 1px 1px 2px var(--corDetalhe2);
+    border-radius: 4px;
+  }
+
+}
+
+@media(max-width:600px) {
+  .footer h4 {
+    font-size: 1.75rem;
+  }
+
+  .projetos {
+    padding: 32px 32px 30px 32px;
+  }
+
+  .habilidades {
+    padding: 30px 32px 32px 32px;
+  }
+
+  .projetos ul {
+    text-align: center;
+  }
+
+  .habilidades ul {
+    text-align: center;
+  }
+
+  .projetosLista {
+    gap: 22px;
+  }
+
+
+
+}

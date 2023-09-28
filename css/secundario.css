@@ -1,0 +1,313 @@
+.secundarioBg {
+  background-color: var(--corFundo2);
+}
+
+.secundarioDiv {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--corFundo1);
+  box-shadow: -1200px 0 0 var(--corFundo1);
+}
+
+.formacao {
+  margin-left: 220px;
+  margin-bottom: 194px;
+  font-family: "Roboto", sans-serif;
+}
+
+.formacaoTitulo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.75rem;
+  /*28px */
+  color: var(--corTexto1);
+  position: relative;
+  margin-top: 60px;
+}
+
+.formacaoTitulo::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 22px;
+  background-color: var(--corDetalhe2);
+  position: absolute;
+  top: 10px;
+  left: -28px
+}
+
+.formacaoConteudo {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.formacaoConteudo h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  /*32px*/
+  line-height: 2.375rem;
+  /*38px*/
+  color: var(--corTexto2);
+  margin-top: 22px;
+}
+
+.formacaoConteudo p {
+  font-size: 1rem;
+  /* 16px*/
+  line-height: 1.5rem;
+  /*24px*/
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+
+.formacaoDetalhe {
+  display: flex;
+  flex-direction: column;
+  place-self: start-end;
+  text-align: end;
+  position: relative;
+  margin-right: 8px;
+}
+
+.formacaoAno {
+  color: var(--corTexto1);
+  font-size: 0.75rem;
+  /*12px*/
+  line-height: 1.5rem;
+  /*24px*/
+
+}
+
+
+.formacaoCampus {
+  color: var(--corTexto2);
+  font-size: 1rem;
+  /*16px*/
+  line-height: 1.5rem;
+  /* 24px */
+}
+
+.sobreMim {
+  margin-top: 140px;
+}
+
+.sobreMim h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  /*28px*/
+  line-height: 2.375rem;
+  /*38px*/
+}
+
+.sobreMim p {
+  margin-top: 8px;
+  margin-left: 32px;
+  max-width: 40ch;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* -------------------CURSOS/IDIOMAS-------------------- */
+
+.outrosBg {
+  background-color: var(--corFundo2);
+  font-family: "Josefin Sans";
+}
+
+.cursosDiv {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 300px auto;
+  /* align-items: center; */
+  margin-top: 60px;
+}
+
+.cursosDiv h2 {
+  font-size: 1.875rem;
+  /*30px*/
+  line-height: 2.375rem;
+  /*38px*/
+  color: var(--corTexto2);
+  font-weight: 400;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.cursosDiv h2::after {
+  content: "";
+  display: block;
+  background-color: var(--corTexto2);
+  height: 1px;
+  /*16px*/
+}
+
+.cursosDiv img {
+  align-self: center;
+  margin-top: 32px;
+}
+
+.cursoOrigamid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 32px 36px 32px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.cursoOrigamid::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 200px;
+  background-color: var(--corFundo1);
+  position: absolute;
+  top: 86px;
+  left: 80px;
+}
+
+.cursoOrigamid span {
+  color: var(--corTexto1);
+}
+
+.cursoUdemy {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+}
+
+.cursoUdemy span:last-child {
+  color: var(--corTexto1);
+}
+
+.idiomasDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.idiomasDiv h2 {
+  font-size: 1.875rem;
+  /*30px*/
+  line-height: 2.375rem;
+  /*38px*/
+  color: var(--corTexto2);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 100px;
+  align-self: center;
+}
+
+.idiomasDiv h2::after {
+  content: "";
+  display: block;
+  background-color: var(--corTexto2);
+  height: 1px;
+  /*16px*/
+}
+
+.idiomasDiv img {
+  margin-top: 32px;
+  align-self: center;
+}
+
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 32px;
+}
+
+.idioma span:last-child {
+  color: var(--corTexto1);
+}
+
+
+@media (max-width: 800px) {
+  .secundarioDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao {
+    margin-left: 0px;
+    padding: 42px;
+    margin-bottom: 0;
+  }
+
+  .formacaoTitulo {
+    margin-top: 0;
+  }
+
+  .formacaoConteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .formacaoDetalhe {
+    place-self: start;
+    margin-top: 12px;
+    margin-left: 32px;
+    text-align: start;
+  }
+
+  .cursosDiv {
+    margin-top: 32px;
+  }
+}
+
+@media(max-width:600px) {
+  .formacaoTitulo {
+    font-size: 1.5rem;
+  }
+
+  .formacaoConteudo h4 {
+    font-size: 1.75rem;
+  }
+
+  .sobreMim h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width:400px) {
+  .formacao {
+    padding: 32px;
+  }
+
+  .formacaoTitulo {
+    font-size: 1.3rem;
+  }
+
+  .formacaoConteudo h4 {
+    font-size: 1.5rem;
+    margin-top: 18px;
+  }
+
+  .sobreMim {
+    margin-top: 80px;
+  }
+
+  .sobreMim h3 {
+    font-size: 1.4rem;
+  }
+
+  .sobreMim p {
+    margin-left: 22px;
+  }
+}
+
+/* -----IDIOMAS------- */
+
+@media(max-width:800px) {
+  .idiomasDiv h2 {
+    margin-top: 80px;
+  }
+
+  .cursoOrigamid::after {
+    display: none;
+  }
+}
