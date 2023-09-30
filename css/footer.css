@@ -1,6 +1,9 @@
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  margin-bottom: 120px;
 }
 
 .footer h4 {
@@ -9,106 +12,99 @@
   line-height: 2.375rem;
 }
 
-.projetos {
-  padding: 60px;
+.projetos h4 {
+  margin-top: 100px;
+}
+
+.projetos span {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 4px;
 }
 
 .projetosLista {
-  margin-top: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.projetosLista li {
   font-family: "Roboto", sans-serif;
-  padding: 4px;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 12px;
 }
 
-.projetosLista li a[href^="./louvorjk"]:hover {
-  text-shadow: 2px 2px 10px #86da9c;
+.projetosLista li a {
+  padding: 12px;
+  display: block;
+  /* background: linear-gradient(#eeeeee, #dddddb); */
+  background-color: #2E394C;
+  color: #EDF3F7;
+  box-shadow: 1px 2px 4px #4f607e;
+  border-radius: 4px;
 }
 
-.projetosLista li a[href^="./oldportfolio"]:hover {
-  text-shadow: 2px 2px 10px #838ad8;
+.projetosLista li a:hover {
+  transform: scale(1.1);
 }
 
-.projetosLista li a[href^="./bikcraft"]:hover {
-  text-shadow: 2px 2px 10px #ffbb00c2;
-}
-
-.projetosLista li a[href^="./cssflexbox"]:hover {
-  text-shadow: 2px 2px 10px #6f9dff;
-}
-
-.projetosLista li a[href^="https://rastrearfrotas"]:hover {
-  text-shadow: 2px 2px 10px #db5858;
-}
-
-
-
-.habilidades {
-  padding: 60px;
+.habilidades h4 {
+  margin-top: 60px;
 }
 
 .habilidadesLista {
   margin-top: 22px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .habilidadesLista li {
   font-family: "Roboto", sans-serif;
+  padding: 12px;
+  background-color: #b6bdc9;
+  border-radius: 4px;
+  color: #2E394C;
 }
-
-
 
 
 @media(max-width:800px) {
   .footer {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 42px;
+  }
+
+  .footer h4 {
+    text-align: center;
+  }
+
+  .projetos h4 {
+    margin-top: 32px;
+  }
+
+  .projetos span {
+    text-align: center;
+    font-size: 0.9rem;
   }
 
   .projetosLista li:last-child {
     display: none;
   }
 
-  .projetosLista li a[href^="./louvorjk"] {
-    padding: 12px;
-    display: block;
-    /* background: linear-gradient(#eeeeee, #dddddb); */
-    background-color: #D1E4D6;
-    box-shadow: 1px 1px 2px var(--corDetalhe2);
-    border-radius: 4px;
+  .projetosLista {
+    flex-direction: column;
   }
 
-  .projetosLista li a[href^="./oldportfolio"] {
-    padding: 12px;
-    display: block;
-    /* background: linear-gradient(#eeeeee, #dddddb); */
-    background-color: #B6BAE4;
-    box-shadow: 1px 1px 2px var(--corDetalhe2);
-    border-radius: 4px;
+  .projetos ul {
+    text-align: center;
   }
 
-  .projetosLista li a[href^="./cssflexbox"] {
-    padding: 12px;
-    display: block;
-    /* background: linear-gradient(#eeeeee, #dddddb); */
-    background-color: #6f9dff;
-    box-shadow: 1px 1px 2px var(--corDetalhe2);
-    border-radius: 4px;
+  .habilidades h4 {
+    margin-top: 32px;
   }
 
-  .projetosLista li a[href^="./bikcraft"] {
-    padding: 12px;
-    display: block;
-    /* background: linear-gradient(#eeeeee, #dddddb); */
-    background-color: #ffbb00c2;
-    box-shadow: 1px 1px 2px var(--corDetalhe2);
-    border-radius: 4px;
+  .habilidades ul {
+    text-align: center;
   }
 
 }
@@ -124,14 +120,6 @@
 
   .habilidades {
     padding: 30px 32px 32px 32px;
-  }
-
-  .projetos ul {
-    text-align: center;
-  }
-
-  .habilidades ul {
-    text-align: center;
   }
 
   .projetosLista {
