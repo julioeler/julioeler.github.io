@@ -1,0 +1,4 @@
+[submodule "bikcraft"]
+	path = bikcraft
+	url = https://github.com/julioeler/bikcraft.git
+
