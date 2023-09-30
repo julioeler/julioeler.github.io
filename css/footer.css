@@ -33,6 +33,14 @@
   text-shadow: 2px 2px 10px #838ad8;
 }
 
+.projetosLista li a[href^="./bikcraft"]:hover {
+  text-shadow: 2px 2px 10px #ffbb00c2;
+}
+
+.projetosLista li a[href^="./cssflexbox"]:hover {
+  text-shadow: 2px 2px 10px #6f9dff;
+}
+
 .projetosLista li a[href^="https://rastrearfrotas"]:hover {
   text-shadow: 2px 2px 10px #db5858;
 }
@@ -53,6 +61,9 @@
 .habilidadesLista li {
   font-family: "Roboto", sans-serif;
 }
+
+
+
 
 @media(max-width:800px) {
   .footer {
@@ -78,6 +89,24 @@
     display: block;
     /* background: linear-gradient(#eeeeee, #dddddb); */
     background-color: #B6BAE4;
+    box-shadow: 1px 1px 2px var(--corDetalhe2);
+    border-radius: 4px;
+  }
+
+  .projetosLista li a[href^="./cssflexbox"] {
+    padding: 12px;
+    display: block;
+    /* background: linear-gradient(#eeeeee, #dddddb); */
+    background-color: #6f9dff;
+    box-shadow: 1px 1px 2px var(--corDetalhe2);
+    border-radius: 4px;
+  }
+
+  .projetosLista li a[href^="./bikcraft"] {
+    padding: 12px;
+    display: block;
+    /* background: linear-gradient(#eeeeee, #dddddb); */
+    background-color: #ffbb00c2;
     box-shadow: 1px 1px 2px var(--corDetalhe2);
     border-radius: 4px;
   }
