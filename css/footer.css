@@ -32,13 +32,15 @@
   gap: 12px;
 }
 
+
 .projetosLista li a {
   padding: 12px;
   display: block;
   /* background: linear-gradient(#eeeeee, #dddddb); */
   background-color: #2E394C;
   color: #EDF3F7;
-  box-shadow: 1px 2px 4px #4f607e;
+  /* box-shadow: 1px 2px 4px #4f607e; */
+  box-shadow: 0px 2px 2px #566683a1;
   border-radius: 4px;
 }
 
@@ -89,6 +91,10 @@
 
   .projetosLista li:last-child {
     display: none;
+  }
+
+  .projetosLista li a:hover {
+    transform: none;
   }
 
   .projetosLista {
