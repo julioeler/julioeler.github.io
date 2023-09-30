@@ -2,3 +2,7 @@
 	path = bikcraft
 	url = https://github.com/julioeler/bikcraft.git
 
+[submodule "cssflexbox"]
+	path = cssflexbox
+	url = https://github.com/julioeler/cssflexbox.git
+
