@@ -24,6 +24,7 @@
   color: var(--corTexto1);
   position: relative;
   margin-top: 60px;
+  grid-column: 1;
 }
 
 .formacaoTitulo::before {
@@ -40,6 +41,7 @@
 .formacaoConteudo {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  animation: is-show 0.8s ease forwards;
 }
 
 .formacaoConteudo h4 {
@@ -91,6 +93,9 @@
 
 .sobreMim {
   margin-top: 140px;
+  opacity: 0;
+  animation: is-show 0.8s ease forwards 0.12s;
+
 }
 
 .sobreMim h3 {
@@ -309,5 +314,17 @@
 
   .cursoOrigamid::after {
     display: none;
+  }
+}
+
+@keyframes is-show {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 }

@@ -68,6 +68,31 @@
   color: #2E394C;
 }
 
+.projetosLista li:first-child a {
+  animation: is-bouncing 2s cubic-bezier(0.065, 0.82, 0.165, 1) infinite alternate;
+}
+
+
+.habilidadesLista {
+  animation: moving 4s ease infinite alternate;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(12px);
+  }
+}
+
+@keyframes is-bouncing {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(0.9);
+
+  }
+}
 
 @media(max-width:800px) {
   .footer {
