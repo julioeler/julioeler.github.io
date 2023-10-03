@@ -24,10 +24,13 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
-  height: 32px;
+}
+
+.main img,
+.secundarioDiv img {
   width: 32px;
+  height: 32px;
 }
 
 a {

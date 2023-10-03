@@ -18,7 +18,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url("/arquivos/svg/Detalhe.svg");
+  background: url("../arquivos/svg/Detalhe.svg");
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,7 +110,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url("/arquivos/svg/Cursos\ Icone.svg");
+  background: url("../arquivos/svg/Cursos\ Icone.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -123,7 +123,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url("/arquivos/svg/Idioma\ Icone.svg");
+  background: url("../arquivos/svg/Idioma\ Icone.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
