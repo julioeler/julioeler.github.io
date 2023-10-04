@@ -58,8 +58,7 @@
   top: 6px;
 }
 
-.projetoDiv:hover,
-.projetoDiv:focus {
+.projetoDiv:hover {
   transform: scale(1.1);
   transition: 0.4s;
 }
@@ -121,7 +120,7 @@
   text-align: center;
   transform: translateY(40px);
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   left: 20px;
   right: 20px;
   color: #ffffff;
@@ -161,28 +160,88 @@
   margin-top: 100px;
 }
 
-
-
-.habilidades h4 {
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
   margin-top: 60px;
-  text-align: center;
 }
+
 
 .habilidadesLista {
-  margin-top: 22px;
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
-.habilidadesLista li {
-  font-family: "Roboto", sans-serif;
-  padding: 12px;
-  background-color: #b6bdc9;
-  border-radius: 4px;
-  color: #2E394C;
+.habilidadeContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
 }
+
+
+.habilidadesLista span {
+  display: inline-block;
+}
+
+.habilidades h4 {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+
+.progressBar {
+  width: 300px;
+  height: 22px;
+  background-color: #dddddd;
+  border-radius: 6px;
+}
+
+
+.habilidade1 .progress {
+  max-width: 300px;
+  width: 80%;
+  height: 22px;
+  background-color: #00226b;
+  border-radius: 6px;
+}
+
+.habilidade2 .progress {
+  max-width: 300px;
+  width: 80%;
+  height: 22px;
+  background-color: #00226b;
+  border-radius: 6px;
+
+}
+
+.habilidade3 .progress {
+  max-width: 300px;
+  width: 50%;
+  height: 22px;
+  background-color: #00226b;
+  border-radius: 6px;
+}
+
+.habilidade4 .progress {
+  max-width: 300px;
+  width: 70%;
+  height: 22px;
+  background-color: #00226b;
+  border-radius: 6px;
+}
+
+.habilidade5 .progress {
+  max-width: 300px;
+  width: 70%;
+  height: 22px;
+  background-color: #00226b;
+  border-radius: 6px;
+}
+
 
 @media(max-width:800px) {
   .footer {
