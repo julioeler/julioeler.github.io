@@ -11,7 +11,7 @@
   --corP3: #F39422;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --corFundo2: #010038;
     --corFundo1: #293a80;
