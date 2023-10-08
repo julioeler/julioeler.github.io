@@ -1,5 +1,7 @@
 .footer {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  background-color: var(--corFundo2);
+  color: var(--corTexto2);
 }
 
 .footer h4 {
@@ -205,7 +207,7 @@
   max-width: 300px;
   width: 80%;
   height: 22px;
-  background-color: #00226b;
+  background-color: var(--corP2);
   border-radius: 6px;
 }
 
@@ -213,7 +215,7 @@
   max-width: 300px;
   width: 80%;
   height: 22px;
-  background-color: #00226b;
+  background-color: var(--corP2);
   border-radius: 6px;
 
 }
@@ -222,7 +224,7 @@
   max-width: 300px;
   width: 50%;
   height: 22px;
-  background-color: #00226b;
+  background-color: var(--corP2);
   border-radius: 6px;
 }
 
@@ -230,7 +232,7 @@
   max-width: 300px;
   width: 70%;
   height: 22px;
-  background-color: #00226b;
+  background-color: var(--corP2);
   border-radius: 6px;
 }
 
@@ -238,7 +240,7 @@
   max-width: 300px;
   width: 70%;
   height: 22px;
-  background-color: #00226b;
+  background-color: var(--corP2);
   border-radius: 6px;
 }
 
@@ -247,7 +249,6 @@
   .footer {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 42px;
   }
 
   .footer h4 {

@@ -2,9 +2,26 @@
   --corFundo1: #DDDDDB;
   --corFundo2: #ffffff;
   --corTexto1: #787878;
-  --corTexto2: #000000;
+  --corTexto2: #131313;
   --corDetalhe1: #d9d9d9;
   --corDetalhe2: #c1c1c1;
+  --corP0: #010038;
+  --corP1: #293A80;
+  --corP2: #537EC5;
+  --corP3: #F39422;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --corFundo2: #010038;
+    --corFundo1: #293a80;
+    --corTexto2: #dddddb;
+    --corP2: #f39422;
+    --corDetalhe1: #f39422;
+    --corDetalhe2: #f39422;
+
+
+  }
 }
 
 /* ----ESTILOS GLOBAIS--------- */
@@ -35,7 +52,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--corP2);
 }
 
 ul {

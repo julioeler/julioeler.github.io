@@ -9,6 +9,8 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 0;
+  color: var(--corTexto2);
+
 }
 
 .headerSpan1 {
@@ -28,7 +30,7 @@
   display: inline-block;
   width: 360px;
   height: 1px;
-  background-color: var(--corTexto2);
+  background-color: var(--corTexto1);
   position: absolute;
   top: 22px;
   left: -132px;
@@ -42,7 +44,7 @@
 }
 
 .headerTitulo span {
-  color: #787878;
+  color: var(--corTexto1);
 }
 
 @media (max-width: 800px) {
