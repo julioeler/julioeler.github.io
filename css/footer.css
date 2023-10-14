@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 120px;
+  padding-bottom: 20px;
   background-color: var(--corFundo2);
   color: var(--corTexto2);
 }
@@ -244,6 +244,31 @@
   border-radius: 6px;
 }
 
+.habilidade6 .progress {
+  max-width: 300px;
+  width: 30%;
+  height: 22px;
+  background-color: var(--corP2);
+  border-radius: 6px;
+}
+
+
+.copy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans";
+  gap: 120px;
+  margin-top: 40px;
+}
+
+.copy a:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+
 
 @media(max-width:800px) {
   .footer {
@@ -279,6 +304,10 @@
 
   .habilidades ul {
     text-align: center;
+  }
+
+  .copy p {
+    display: none;
   }
 }
 
