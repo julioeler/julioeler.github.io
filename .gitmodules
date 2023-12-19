@@ -6,3 +6,6 @@
 	path = cssflexbox
 	url = https://github.com/julioeler/cssflexbox.git
 
+[submodule "modulocar"]
+	path = modulocar
+	url = https://github.com/julioeler/modulocar.git
