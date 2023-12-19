@@ -114,6 +114,17 @@
 .projeto4::after {
   background-image: url('../arquivos/lobo.jpg');
 }
+.projeto5 {
+  background-color: #000000;
+}
+
+.projeto5::before {
+  background-image: linear-gradient(180deg, #ffffff, #333333);
+}
+
+.projeto5::after {
+  background-image: url('../modulocar/imagens/icones/favicon.svg');
+}
 
 .projetoConteudo {
   display: flex;
