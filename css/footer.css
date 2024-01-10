@@ -163,7 +163,9 @@
   display: inline-block;
 }
 
-.projetoDiv:hover .projetoConteudo {
+.projetoDiv:hover .projetoConteudo, 
+.projetoDiv:active .projetoConteudo,
+.projetoDiv:focus .projetoConteudo{ 
   transform: translateY(-40px);
   transition: opacity 0.2s, transform 0.3s cubic-bezier(.46, -0.74, .66, 1.65);
   z-index: 1;
