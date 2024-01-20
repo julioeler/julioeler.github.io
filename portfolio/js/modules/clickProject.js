@@ -2,10 +2,7 @@ export default function initClickProject() {}
 
 const projetos = document.querySelectorAll('.projetoDiv');
 projetos.forEach(projeto => {
-  const userEvent = ['touchstart', 'click'];
-  userEvent.forEach(event => {
-    projeto.addEventListener(event, handleClick);
-  })
+    projeto.addEventListener('click', handleClick);
 });
 
 function handleClick(event) {
