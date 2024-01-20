@@ -5,8 +5,7 @@ projetos.forEach(projeto => {
     projeto.addEventListener('click', handleClick);
 });
 
-function handleClick(event) {
-  event.preventDefault();
+function handleClick() {
   this.classList.add('ativo');
   outsideClick(this, () =>{
     this.classList.remove('ativo')
@@ -14,10 +13,17 @@ function handleClick(event) {
 }
 
 function outsideClick(element, callback) {
+  const outside = 'data-ouside'
   const html = document.documentElement;
-  html.addEventListener('click', handleOutsideClick);
+
+  if(!element.hasAttribute(outside)){
+    html.addEventListener('click', handleOutsideClick);
+    element.setAttribute(outside, '');
+}
   function handleOutsideClick(event) {
     if(!element.contains(event.target)){
+      element.removeAttribute(outside);
+      html.removeEventListener('click', handleOutsideClick)
       callback();
     }
   }
