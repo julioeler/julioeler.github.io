@@ -16,6 +16,15 @@ h1{
   color: #c6e6e2;
 }
 
+h1 img{
+  width: 40px;
+  opacity: 50%;
+}
+
+h2{
+  text-align: center;
+  color: #eeeeee;
+}
 .container {
   max-width: 600px;
   margin: 50px auto;
@@ -33,6 +42,7 @@ input[type="number"] {
   border-radius: 4px;
   box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
   border-color: #ccc;
+  font-size: 1.1rem;
 }
 
 input[type="number"]:hover{
@@ -48,6 +58,16 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+#totalDisplay{
+  font-size: 1.2rem;
+}
+
+.textTotal{
+  font-size: 1.2rem;
+  color: #2A9D8F;
 }
 
 button:hover {
